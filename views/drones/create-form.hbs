@@ -1,24 +1,9 @@
 <h2>Create a new drone</h2>
 
-<form action="/drones/new" method="post">
-
-  <label for="name-input">Name:</label>
-  <input type="text" name="name" id="name-input" />
-
-  <select name="drone" id="drone-input">
-    {{#each drones}}
-    <option value="{{_id}}">{{ name }}</option>
-    {{/each}}
-  </select>
-
-  <label for="propellers-input">Propellers:</label>
-    <input type="number" name="propellers" id="propellers-input"/>
-  <textarea name="description" id="description-input" cols="30" rows="4">
-  </textarea>
-
-  <label for="maxSpeed-input">maxSpeed:</label>
-  <input type="number" name="maxSpeed" id="rate-input" min="1" max="10" />
-
-  <button type="submit">Create</button>
-
+<form action="/drones/create" method="post">
+<input type="text" placeholder="Drone's name" name="name" />
+<input type="number" placeholder="Number of propellers" name="propellers" />
+<input type="number" placeholder="Drone's speed" name="maxSpeed" />
+<button type="Submit"> Add new Drone</button>
 </form>
+
