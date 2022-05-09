@@ -5,6 +5,9 @@
   <li>Propellers: {{propellers}}</li>
   <li>Speed: {{maxSpeed}} meters per second </li>
   <a href="/drones/{{_id}}/edit">Edit the Drone</a>
+  <form action="/drones/{{_id}}/delete" method="post">
+  <button type = "submit"> Delete</button>
+  </form>
 
 {{/each}}
 <br />
